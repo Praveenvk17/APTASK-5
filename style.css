@@ -1,0 +1,42 @@
+/* Reset and Base Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f8f9fa;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Header */
+header { background: #640000; color: #fff; padding: 1rem; text-align: center; }
+header nav ul { list-style: none; display: flex; justify-content: center; flex-wrap: wrap; margin-top: 0.5rem; }
+header nav ul li { margin: 0.5rem 1rem; }
+header nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
+
+/* Hero Section */
+.hero { text-align: center; padding: 2rem; background: #8b2232; color: #fff; border-bottom: 5px solid #006400; }
+.hero button { margin-top: 1rem; padding: 0.5rem 1rem; border: none; background: #ff9800; color: #fff; cursor: pointer; border-radius: 5px; }
+
+/* Content Sections */
+.content { padding: 2rem; text-align: center; }
+#playerList { list-style: none; margin-top: 1rem; }
+#playerList li { padding: 0.5rem; border-bottom: 1px solid #ddd; }
+
+/* Table */
+table { width: 90%; margin: 1rem auto; border-collapse: collapse; }
+table, th, td { border: 1px solid #333; }
+th, td { padding: 0.5rem; text-align: center; }
+
+/* Boxes */
+.stats-box, .score-box { background: #e0ffe0; padding: 1rem; border-radius: 8px; width: 60%; margin: 1rem auto; box-shadow: 0 0 5px rgba(0,0,0,0.2); }
+.score-box button { margin-top: 0.5rem; padding: 0.5rem 1rem; background: #64000c; color: #fff; border: none; border-radius: 5px; cursor: pointer; }
+
+/* Footer */
+footer { background: #640000; color: #fff; text-align: center; padding: 1rem; margin-top: 2rem; }
+
+/* Dark Mode */
+.dark-mode { background: #121212; color: #e0e0e0; }
+.dark-mode header, .dark-mode footer { background: #222; }
+.dark-mode .hero { background: #333; }
+.dark-mode .stats-box, .dark-mode .score-box { background: #1e3d1e; color: #fff; }

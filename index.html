@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cricket Field Web App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>🏏 Cricket Field Tracker</h1>
+    <nav>
+      <ul>
+        <li><a href="#players">Players</a></li>
+        <li><a href="#matches">Matches</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#score">Live Score</a></li>
+        <li><a href="#teams">Team Selector</a></li>
+        <li><a href="#register">Register Player</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to the Cricket Field</h2>
+    <p>Track matches, players, and cricket stats in one place.</p>
+    <button id="themeBtn">Toggle Dark Mode</button>
+  </section>
+
+  <!-- Players Section -->
+  <section id="players" class="content">
+    <h2>Top Players</h2>
+    <input type="text" id="searchBar" placeholder="Search player..." />
+    <ul id="playerList">
+      <li>Virat Kohli</li>
+      <li>MS Dhoni</li>
+      <li>Rohit Sharma</li>
+      <li>Jasprit Bumrah</li>
+      <li>Hardik Pandya</li>
+    </ul>
+  </section>
+
+  <!-- Matches Section -->
+  <section id="matches" class="content">
+    <h2>Upcoming Matches</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Match</th>
+          <th>Date</th>
+          <th>Venue</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>India vs Australia</td>
+          <td>05 Sep 2025</td>
+          <td>Mumbai</td>
+        </tr>
+        <tr>
+          <td>India vs England</td>
+          <td>10 Sep 2025</td>
+          <td>Delhi</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats" class="content">
+    <h2>Player Performance Stats</h2>
+    <div class="stats-box">
+      <p><strong>Virat Kohli:</strong> 80 Runs</p>
+      <p><strong>MS Dhoni:</strong> 45 Runs</p>
+      <p><strong>Jasprit Bumrah:</strong> 3 Wickets</p>
+    </div>
+  </section>
+
+  <!-- Live Score Section -->
+  <section id="score" class="content">
+    <h2>Live Score Simulation</h2>
+    <div class="score-box">
+      <p id="scoreText">Runs: 0 | Wickets: 0</p>
+      <button id="updateScoreBtn">Update Score</button>
+    </div>
+  </section>
+
+  <!-- Team Selector -->
+  <section id="teams" class="content">
+    <h2>Team Selector</h2>
+    <label for="teamA">Team A:</label>
+    <select id="teamA">
+      <option>India</option>
+      <option>Australia</option>
+      <option>England</option>
+      <option>Pakistan</option>
+    </select>
+    <br><br>
+    <label for="teamB">Team B:</label>
+    <select id="teamB">
+      <option>India</option>
+      <option>Australia</option>
+      <option>England</option>
+      <option>Pakistan</option>
+    </select>
+    <br><br>
+    <button id="showTeamsBtn">Show Teams</button>
+    <p id="selectedTeams"></p>
+  </section>
+
+  <!-- Register Player -->
+  <section id="register" class="content">
+    <h2>Register New Player</h2>
+    <form id="playerForm">
+      <input type="text" id="newPlayer" placeholder="Enter player name" required />
+      <button type="submit">Add Player</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Cricket Field App | Built with ❤️ using HTML, CSS, JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
